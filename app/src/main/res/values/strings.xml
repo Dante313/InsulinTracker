@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InsulinTracker</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="successfully_added">Инсулин добавлен!</string>
+    <string name="insulin_list">Список инсулина</string>
+    <string name="insulin_using">Применение инсулина</string>
+    <string name="morning_inject">Утро. 8:00. 18 ед.</string>
+    <string name="evening_inject">Вечер. 21:00. 4 ед.</string>
+    <string name="inject">Ввести</string>
+    <string name="new_needle">Новая игла</string>
+</resources>

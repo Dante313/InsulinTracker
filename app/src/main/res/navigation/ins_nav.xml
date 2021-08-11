@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ins_nav"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.dante.android.insulintracker.fragments.List.ListFragment"
+        android:label="@string/insulin_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_pickedInsulinFragment"
+            app:destination="@id/pickedInsulinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickedInsulinFragment"
+        android:name="com.dante.android.insulintracker.fragments.Picked.pickedInsulinFragment"
+        android:label="@string/insulin_using"
+        tools:layout="@layout/fragment_picked_insulin" >
+        <action
+            android:id="@+id/action_pickedInsulinFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="currentInsulin"
+            app:argType="com.dante.android.insulintracker.model.Insulin" />
+    </fragment>
+</navigation>
